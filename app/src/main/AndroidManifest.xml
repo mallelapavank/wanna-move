@@ -29,7 +29,6 @@
             android:label="@string/title_activity_maps">
             android:name=".HouseListing">
         </activity>
-<<<<<<< HEAD
 	
 	<activity android:name=".LoginActivity"></activity>
 
@@ -61,15 +60,6 @@
         </service>
 
 
-=======
-        <activity android:name=".LoginActivity">    <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-
-        </activity>
->>>>>>> 981412926c1738773ac89337789236cd03441370
     </application>
 
 </manifest>
