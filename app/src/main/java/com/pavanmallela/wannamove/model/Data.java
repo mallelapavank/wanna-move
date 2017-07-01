@@ -1,8 +1,6 @@
 package com.pavanmallela.wannamove.model;
 
 import com.pavanmallela.wannamove.HouseListingActivity;
-import com.pavanmallela.wannamove.PackersList;
-import com.pavanmallela.wannamove.SettlingIn;
 
 public class Data {
 
