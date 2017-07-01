@@ -1,5 +1,6 @@
 package com.pavanmallela.wannamove;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity implements GridClickInterfac
     @Override
     public void onFindHouseClick() {
         Log.d(TAG,"onFindHouseClick");
+        Intent intent=new Intent(this,HouseListing.class);
+        startActivity(intent);
     }
 
     @Override
