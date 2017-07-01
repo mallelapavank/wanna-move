@@ -1,5 +1,4 @@
-
-package com.pavanmallela.wannamove;
+package com.pavanmallela.wannamove.model;
 
 
 public class ModelHouseListing {

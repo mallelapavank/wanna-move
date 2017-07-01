@@ -1,18 +1,20 @@
+package com.pavanmallela.wannamove.model;
 
-package com.pavanmallela.wannamove;
-
+import com.pavanmallela.wannamove.HouseListingActivity;
+import com.pavanmallela.wannamove.PackersList;
+import com.pavanmallela.wannamove.SettlingIn;
 
 public class Data {
 
-    private HouseListing houseListing;
+    private HouseListingActivity houseListing;
     private PackersList packersList;
     private SettlingIn settlingIn;
 
-    public HouseListing getHouseListing() {
+    public HouseListingActivity getHouseListing() {
         return houseListing;
     }
 
-    public void setHouseListing(HouseListing houseListing) {
+    public void setHouseListing(HouseListingActivity houseListing) {
         this.houseListing = houseListing;
     }
 
