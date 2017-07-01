@@ -8,6 +8,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.util.Log;
 import android.view.View;
 
+import com.google.firebase.crash.FirebaseCrash;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -56,7 +57,12 @@ public class PackersListActivity extends AppCompatActivity {
                         packersLists=new ArrayList<PackersList>();
                     }
                     packersLists.add(packersList);
-                    setAdapter();
+                    try {
+                        setAdapter();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        FirebaseCrash.report(e);
+                    }
                     binding.progressBar.setVisibility(View.GONE);
                 }
             }
@@ -68,7 +74,7 @@ public class PackersListActivity extends AppCompatActivity {
         });
     }
 
-    public void setAdapter(){
+    public void setAdapter() throws Exception{
         if(adapter!=null){
             adapter.notifyDataSetChanged();
         }else{
