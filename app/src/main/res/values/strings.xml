@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Wanna Move</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
