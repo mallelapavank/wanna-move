@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements GridClickInterfac
     @Override
     public void onHirePAndM() {
         Log.d(TAG,"onHirePAndM");
+        Intent intent=new Intent(this,PackersListActivity.class);
+        startActivity(intent);
     }
 
     @Override

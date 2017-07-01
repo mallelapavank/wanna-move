@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="packer"
+            type="com.pavanmallela.wannamove.model.PackersList" />
+    </data>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/darker_gray"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/packername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{packer.name}"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/packerlocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{packer.location}"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/showInterest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book Service?"/>
+
+        </LinearLayout>
+
+</layout>
