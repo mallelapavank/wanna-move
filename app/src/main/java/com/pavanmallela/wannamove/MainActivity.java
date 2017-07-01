@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.pavanmallela.wannamove.databinding.ActivityMainBinding;
+import com.pavanmallela.wannamove.model.HouseListing;
 
 public class MainActivity extends AppCompatActivity implements GridClickInterface{
 

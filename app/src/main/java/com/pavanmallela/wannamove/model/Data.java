@@ -3,8 +3,7 @@ package com.pavanmallela.wannamove.model;
 import com.pavanmallela.wannamove.HouseListingActivity;
 import com.pavanmallela.wannamove.model.PackersList;
 import com.pavanmallela.wannamove.model.SettlingIn;
-
-public class Data {
+class Data {
 
     private HouseListingActivity houseListing;
     private PackersList packersList;
